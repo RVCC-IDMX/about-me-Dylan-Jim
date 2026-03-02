@@ -1,28 +1,28 @@
 body {
-    font font-family:Roboto;
-    background-color:#8B672E;
-    color:#286AA1;
+    font-family: "Playfair Display SC", serif;
+    background-color: #8B672E;
+    color: #286AA1;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family:"Playfair Display SC";
-    font-size:30pt;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 30px;
 }
 
 header {
-    text-align:center;
+    text-align: center;
 }
 
 #hero, footer {
-    background-color:#E08800;
+    background-color: #E08800;
     text-align: center;
-    padding:10px;
+    padding: 10px;
 }
 
 #hero img {
-    width:300px;
+    width: 300px;
 }
 
 #bio {
-    text-align:center;
+    text-align: center;
 }
