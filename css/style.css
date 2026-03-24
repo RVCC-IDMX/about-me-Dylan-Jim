@@ -1,6 +1,6 @@
 body {
     font-family: "Playfair Display SC", serif;
-    background-color: #8B672E;
+    background-color: #FAF9C8;
     color: #286AA1;
 }
 
@@ -14,7 +14,7 @@ header {
 }
 
 #hero, footer {
-    background-color: #E08800;
+    background-color: #DDFDF4;
     text-align: center;
     padding: 10px;
 }
