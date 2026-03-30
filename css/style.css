@@ -2,6 +2,7 @@ body {
     font-family: "Playfair Display SC", serif;
     background-color: #FAF9C8;
     color: #286AA1;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,6 +12,11 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     text-align: center;
+    padding: 10px;
+}
+
+header img {
+    width: 80px;
 }
 
 #hero, footer {
@@ -19,33 +25,109 @@ header {
     padding: 10px;
 }
 
-/*Hero Section*/
-
+/* Hero Section */
 #hero img {
     width: 300px;
+    max-width: 100%;
 }
 
-/*Bio Section*/
-
+/* Bio Section */
 #bio {
     text-align: center;
+    padding: 10px;
 }
 
 /* Hobbies */
-#hobbies ul li:nth-child(odd){
-    color:aqua
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hobbies h2 {
+    margin-bottom: 5px;
+}
+
+#hobbies ul li:nth-child(odd) {
+    color: aqua;
 }
 
 /* Gallery */
-
-#gallery{
+#gallery {
     border: 2px solid blanchedalmond;
+    padding: 10px;
 }
 
 #gallery img {
-    max-width:100%;
+    max-width: 100%;
 }
 
 #gallery figure {
-    text-align:center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Literature */
+#lit {
+    padding: 10px;
+}
+
+/* Drop cap */
+#lit p:first-child::first-letter {
+    font-size: 3rem;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+}
+
+/* Tablet size */
+@media screen and (min-width: 60em) {
+
+    #gallery figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #gallery figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    #lit div {
+        columns: 2;
+        column-gap: 20px;
+    }
+}
+
+/* Larger screen */
+@media screen and (min-width: 100em) {
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    #gallery h2 {
+        grid-column: 1 / 4;
+        text-align: center;
+    }
+
+    #gallery hr {
+        display: none;
+    }
+
+    #gallery figure {
+        display: block;
+    }
+
+    #gallery figcaption {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+    }
 }
