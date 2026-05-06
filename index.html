@@ -28,12 +28,18 @@
                     <h1 class="logo-title">Web Dev I</h1>
                 </div>
 
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+
                 <div class="navbar-links">
                     <ul>
                         <li><a href="#bio" class="nav-links">Bio</a></li>
+                        <li><a href="#hobbies" class="nav-links">Hobbies</a>
+                        </li>
                         <li><a href="#gallery" class="nav-links">Gallery</a>
                         </li>
                         <li><a href="#lit" class="nav-links">Blog</a></li>
+                        <li><a href="#video" class="nav-links">Video</a></li>
                         <li><a href="#contact" class="nav-links">Contact Me</a>
                         </li>
                     </ul>
@@ -55,23 +61,38 @@
 
             <section id="bio">
 
-                <!-- Bio section, Personal info -->
-
                 <h2>Biography:</h2>
 
                 <div>
+                    <p>
+                        My name is Dylan Jimenez, and I am a student learning
+                        web development. I am from Somerville, New Jersey, and I
+                        enjoy working on projects that let me be creative while
+                        also learning something useful. This About Me website
+                        shows some information about who I am, what I enjoy
+                        doing, and some of the skills I have learned in this
+                        class.
+                    </p>
 
-                    <p>I want to be...</p>
+                    <p>
+                        Outside of school, I like going to the gym, spending
+                        time with friends, watching movies, and traveling when I
+                        get the chance. I also like challenging myself and
+                        trying to improve at whatever I am doing. I think that
+                        is an important part of learning because no one starts
+                        off being perfect at something.
+                    </p>
 
-                    <p>Great at whatever I want to do</p>
-
-                    <p>I like to...</p>
-                    <p>Go to the gym and play sports when I can</p>
-
-                    <p>A fun fact about me...</p>
-                    <p>I have 3 dogs and currently a cat I'm babysitting for a
-                        week</p>
-
+                    <p>
+                        This project helped me understand how HTML and CSS work
+                        together. HTML is used to build the structure of the
+                        page, while CSS is used to style it and make it look
+                        better. I learned how to use sections, images, links,
+                        forms, embedded videos, and responsive layouts. My goal
+                        for this final version is to make the website look
+                        cleaner, more organized, and more complete than the
+                        first version.
+                    </p>
                 </div>
 
             </section>
@@ -80,13 +101,32 @@
 
                 <h2>Hobbies:</h2>
 
-                <ul>
-                    <li>Going to the Gym</li>
-                    <li>Traveling</li>
-                    <li>Hanging out with Friends</li>
-                    <li>Watching Movies</li>
-                    <li>Reading a book every month</li>
-                </ul>
+                <div>
+                    <p>
+                        One of my main hobbies is going to the gym. I like
+                        working out because it helps me stay active, build
+                        discipline, and clear my mind. I also enjoy playing
+                        sports when I have time because it is a good way to
+                        compete, have fun, and spend time with other people.
+                    </p>
+
+                    <p>
+                        I also like traveling and hanging out with friends.
+                        Traveling gives me the chance to see new places and have
+                        different experiences. Hanging out with friends is
+                        important to me because it gives me a break from school
+                        and work. I also enjoy watching movies and reading
+                        because both are good ways to relax.
+                    </p>
+
+                    <ul>
+                        <li>Going to the Gym</li>
+                        <li>Traveling</li>
+                        <li>Hanging out with Friends</li>
+                        <li>Watching Movies</li>
+                        <li>Reading a book every month</li>
+                    </ul>
+                </div>
 
             </section>
 
@@ -100,7 +140,6 @@
                     <img src="img/Beach-640w.jpg" alt="Me at the beach">
                     <figcaption>Me chilling on the beach.</figcaption>
                 </figure>
-
 
                 <hr>
 
@@ -116,51 +155,98 @@
                     <figcaption>Me spending some time in the gym.</figcaption>
                 </figure>
 
-
             </section>
 
             <article id="lit">
 
-                <h2>Excerpt from Dracula</h2>
+                <h2>Image Hover Effects</h2>
 
                 <div>
 
-                    <p>The castle is on the very edge of a terrible precipice. A
-                        stone falling from
-                        the window would fall a thousand feet without touching
-                        anything! As far as
-                        the eye can reach is a sea of green tree tops, with
-                        occasionally a deep rift
-                        where there is a chasm. Here and there are silver
-                        threads where the rivers
-                        wind in deep gorges through the forests.</p>
+                    <p>
+                        Image hover effects are a common design feature used on
+                        websites. A hover effect happens when a user moves their
+                        mouse over something on the page and the design changes.
+                        For images, this could mean the image gets bigger,
+                        changes brightness, gets a border, or shows a caption.
+                        These effects can make a website feel more interactive
+                        and more interesting to use.
+                    </p>
 
-                    <p>The morning of 16 May broke bright and cheerful. The sun
-                        shone warm and
-                        brilliant, and the birds sang sweetly in the trees. The
-                        very air seemed full
-                        of hope and happiness. I felt that the cloud of gloom
-                        which had been hanging
-                        over us for so long was lifting, and that we were about
-                        to enter upon a new
-                        phase of our strange and terrible experience.</p>
+                    <p>
+                        Hover effects are created with CSS. The main part of the
+                        code is the hover pseudo-class, which looks like this:
+                        <code>:hover</code>. A pseudo-class is used to style an
+                        element when it is in a certain state. In this case, the
+                        state is when the mouse is hovering over the element.
+                        For example, if I write CSS for an image and then write
+                        another rule for the image hover state, the image can
+                        look different when someone places their mouse on it.
+                    </p>
 
-                    <p>I am beginning to feel this nocturnal existence tell on
-                        me. It is destroying
-                        my nerve. I start at my own shadow, and am full of all
-                        sorts of horrible
-                        imaginings. God knows that there is ground for my
-                        terrible fear in this
-                        accursed place! I looked out over the beautiful expanse,
-                        bathed in soft
-                        yellow moonlight till it was almost as light as day.</p>
+                    <p>
+                        One simple hover effect is making an image slightly
+                        larger. This can be done with the transform property.
+                        The value <code>scale(1.03)</code> makes the image grow
+                        a little bit without making it too extreme. This is
+                        useful because it lets the user know the image is
+                        interactive, but it does not completely change the
+                        layout of the page.
+                    </p>
+
+                    <figure>
+                        <img src="img/Gym-640w.jpg"
+                            alt="Example of image hover effect">
+                        <figcaption>This image uses a simple hover effect in
+                            CSS.</figcaption>
+                    </figure>
+
+                    <p>
+                        Another common hover effect is changing opacity. Opacity
+                        controls how see-through something is. If an image has a
+                        lower opacity when hovered over, it can look faded. This
+                        effect can be useful when a website wants to place text
+                        over an image or make the image feel softer. Hover
+                        effects can also be combined with borders, shadows, or
+                        rounded corners to make the image look more polished.
+                    </p>
+
+                    <p>
+                        In my About Me project, I used an image hover effect in
+                        my photo gallery. When the user moves their mouse over
+                        one of the gallery images, the image becomes slightly
+                        larger. I chose this effect because it is simple, clean,
+                        and easy to understand. It also matches the style of my
+                        website because my page already uses simple colors,
+                        centered images, and rounded borders.
+                    </p>
+
+                    <p>
+                        Hover effects should not be overused. If too many things
+                        move or change at once, the page can become distracting.
+                        A good hover effect should help the user understand the
+                        page better, not make the page harder to use. It is also
+                        important to remember that hover effects work best on
+                        computers with a mouse. On phones and tablets, users tap
+                        instead of hover, so the website should still look good
+                        even without the hover effect.
+                    </p>
+
+                    <p>
+                        Overall, image hover effects are a simple way to improve
+                        a website. They make images feel more alive and can help
+                        guide the user’s attention. For this project, the hover
+                        effect helped make my photo gallery look more finished
+                        while still keeping the code at a level that makes sense
+                        for this class.
+                    </p>
 
                 </div>
 
             </article>
 
             <section id="video">
-                <h2>A short Video</h2>
+                <h2>A Short Video</h2>
 
                 <iframe id="myVideo" width="560" height="315"
                     src="https://www.youtube.com/embed/VH_aDs4DfJU?si=YCGV6R4V-DKSQ9hM"
@@ -189,15 +275,15 @@
                             <input type="text" id="name" name="name" required>
 
                             <!-- email -->
-                            <label for="email"> Email (required)</label>
+                            <label for="email">Email (required)</label>
                             <input type="email" id="email" name="email"
                                 required>
 
-                            <!-- Phone -->
-                            <label for="phone"> Phone (Optional)</label>
+                            <!-- phone -->
+                            <label for="phone">Phone (Optional)</label>
                             <input type="tel" id="phone" name="phone">
 
-                            <!-- Phone type -->
+                            <!-- phone type -->
                             <label for="phonetype">Phone type (optional)</label>
                             <select id="phonetype" name="phonetype">
                                 <option value="" selected>Select phone type
@@ -207,12 +293,12 @@
                                 <option value="Home">Home</option>
                             </select>
 
-                            <!--message -->
+                            <!-- message -->
                             <label for="message">Message (optional)</label>
                             <textarea id="message" name="message"
-                                rows=8></textarea>
+                                rows="8"></textarea>
 
-                            <!-- Reply -->
+                            <!-- reply -->
                             <fieldset>
                                 <legend>Would you like a reply?</legend>
 
@@ -234,7 +320,7 @@
                                 </ul>
                             </fieldset>
 
-                            <!-- Submit -->
+                            <!-- submit -->
                             <button type="submit">Send</button>
 
                         </div>
@@ -242,15 +328,17 @@
                     </fieldset>
                 </form>
             </section>
+
         </main>
 
         <footer>
-
-            ©2020 - Dylan Jimenez
-
+            <p>©2026 - Dylan Jimenez</p>
+            <p>
+                <a href="https://github.com/RVCC-IDMX/about-me-Dylan-Jim.git">My
+                    GitHub Repo</a>
+            </p>
         </footer>
 
-        <p>Now on Netlify!</p>
     </body>
 
 </html>

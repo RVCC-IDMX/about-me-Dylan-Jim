@@ -192,3 +192,50 @@ legend {
     border: 4px solid #286AA1;
     border-radius: 10px;
 }
+
+/* Gallery hover effect */
+#gallery img {
+    border: 4px solid #286AA1;
+    border-radius: 10px;
+}
+
+#gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Hamburger Menu */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Phone size */
+@media screen and (max-width: 60em) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+
+    #menu-toggle:checked ~ .navbar-links {
+        display: block;
+    }
+}
