@@ -176,3 +176,19 @@ legend {
     width:50%;
     justify-self: center;
 }
+
+/* Video section */
+#video {
+    text-align: center;
+    background-color: #DDFDF4;
+    padding: 20px;
+}
+
+#myVideo {
+    width: 80%;
+    max-width: 700px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 4px solid #286AA1;
+    border-radius: 10px;
+}
